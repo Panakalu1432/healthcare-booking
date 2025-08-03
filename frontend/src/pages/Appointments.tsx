@@ -14,7 +14,7 @@ export const Appointments = () => {
   useEffect(() => {
   const fetchAppointments = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/appointments");
+      const response = await fetch("https://your-backend-service.onrender.com/api/appointments");
       const data = await response.json();
       setAppointments(data);
     } catch (error) {
