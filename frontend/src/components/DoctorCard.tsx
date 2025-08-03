@@ -13,7 +13,7 @@ export const DoctorCard = ({ doctor }: { doctor: Doctor }) => {
 
   useEffect(() => {
     fetch(
-      `https://healthcare-booking/api/appointments/doctor/${encodeURIComponent(
+      `https://healthcare-booking.onrender.com/api/appointments/doctor/${encodeURIComponent(
         doctor.name
       )}`
     )
