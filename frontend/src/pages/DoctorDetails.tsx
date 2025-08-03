@@ -21,7 +21,7 @@ export const DoctorDetails = () => {
   useEffect(() => {
   if (doctor?.name) {
     fetch(
-      `http://localhost:5000/api/appointments/doctor/${encodeURIComponent(
+      `https://your-backend-service.onrender.com/api/appointments/doctor/${encodeURIComponent(
         doctor.name
       )}`
     )
