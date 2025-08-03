@@ -30,7 +30,7 @@ export const AppointmentForm: React.FC<Props> = ({ doctorName }) => {
 
  
    try {
-    const response = await fetch("https://your-backend-service.onrender.com/api/appointments/update", {
+    const response = await fetch("https://healthcare-booking.onrender.com/api/appointments/update", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newAppointment),
